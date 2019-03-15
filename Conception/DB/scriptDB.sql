@@ -4,104 +4,104 @@
 
 
 #------------------------------------------------------------
-# Table: Recettes
+# Table: recettes
 #------------------------------------------------------------
 
-CREATE TABLE Recettes(
+CREATE TABLE recettes(
         id               Int  Auto_increment  NOT NULL ,
         nom              Varchar (100) NOT NULL ,
         tempsPreparation Varchar (20) NOT NULL ,
         tempsCuisson     Int NOT NULL
-	,CONSTRAINT Recettes_PK PRIMARY KEY (id)
+	,CONSTRAINT recettes_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: Utilisateurs
+# Table: utilisateurs
 #------------------------------------------------------------
 
-CREATE TABLE Utilisateurs(
+CREATE TABLE utilisateurs(
         id     Int  Auto_increment  NOT NULL ,
         nom    Varchar (50) NOT NULL ,
         prenom Varchar (50) NOT NULL ,
         mail   Varchar (100) NOT NULL ,
         mdp    Varchar (50) NOT NULL ,
         pseudo Varchar (100) NOT NULL
-	,CONSTRAINT Utilisateurs_PK PRIMARY KEY (id)
+	,CONSTRAINT utilisateurs_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: Adresse
+# Table: adresses
 #------------------------------------------------------------
 
-CREATE TABLE Adresse(
+CREATE TABLE adresses(
         id              Int  Auto_increment  NOT NULL ,
         numeroRue       Varchar (10) NOT NULL ,
         nomRue          Varchar (100) NOT NULL ,
         codePostal      TinyINT NOT NULL ,
         ville           Varchar (30) NOT NULL ,
         pays            Varchar (30) NOT NULL ,
-        id_Utilisateurs Int NOT NULL
-	,CONSTRAINT Adresse_PK PRIMARY KEY (id)
+        id_utilisateurs Int NOT NULL
+	,CONSTRAINT adresses_PK PRIMARY KEY (id)
 
-	,CONSTRAINT Adresse_Utilisateurs_FK FOREIGN KEY (id_Utilisateurs) REFERENCES Utilisateurs(id)
+	,CONSTRAINT adresses_utilisateurs_FK FOREIGN KEY (id_utilisateurs) REFERENCES utilisateurs(id)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: Factures
+# Table: factures
 #------------------------------------------------------------
 
-CREATE TABLE Factures(
+CREATE TABLE factures(
         id             Int  Auto_increment  NOT NULL ,
         nomClient      Varchar (100) NOT NULL ,
         id_ingredients Int NOT NULL ,
         date_creation  TimeStamp NOT NULL ,
         date_paiement  Date NOT NULL ,
-        id_Adresse     Int NOT NULL
-	,CONSTRAINT Factures_PK PRIMARY KEY (id)
+        id_adresses    Int NOT NULL
+	,CONSTRAINT factures_PK PRIMARY KEY (id)
 
-	,CONSTRAINT Factures_Adresse_FK FOREIGN KEY (id_Adresse) REFERENCES Adresse(id)
+	,CONSTRAINT factures_adresses_FK FOREIGN KEY (id_adresses) REFERENCES adresses(id)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: uniteMesure
+# Table: unite_mesures
 #------------------------------------------------------------
 
-CREATE TABLE uniteMesure(
+CREATE TABLE unite_mesures(
         id  Int  Auto_increment  NOT NULL ,
         nom Varchar (100) NOT NULL
-	,CONSTRAINT uniteMesure_PK PRIMARY KEY (id)
+	,CONSTRAINT unite_mesures_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: categorie
+# Table: categories
 #------------------------------------------------------------
 
-CREATE TABLE categorie(
+CREATE TABLE categories(
         id            Int NOT NULL ,
         nom_categorie Varchar (50) NOT NULL
-	,CONSTRAINT categorie_PK PRIMARY KEY (id)
+	,CONSTRAINT categories_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: Ingredients
+# Table: ingredients
 #------------------------------------------------------------
 
-CREATE TABLE Ingredients(
-        id             Int  Auto_increment  NOT NULL ,
-        nom            Varchar (50) NOT NULL ,
-        prix           DECIMAL (15,3)  NOT NULL ,
-        id_uniteMesure Int NOT NULL ,
-        id_categorie   Int NOT NULL
-	,CONSTRAINT Ingredients_PK PRIMARY KEY (id)
+CREATE TABLE ingredients(
+        id               Int  Auto_increment  NOT NULL ,
+        nom              Varchar (50) NOT NULL ,
+        prix             DECIMAL (15,3)  NOT NULL ,
+        id_unite_mesures Int NOT NULL ,
+        id_categories    Int NOT NULL
+	,CONSTRAINT ingredients_PK PRIMARY KEY (id)
 
-	,CONSTRAINT Ingredients_uniteMesure_FK FOREIGN KEY (id_uniteMesure) REFERENCES uniteMesure(id)
-	,CONSTRAINT Ingredients_categorie0_FK FOREIGN KEY (id_categorie) REFERENCES categorie(id)
+	,CONSTRAINT ingredients_unite_mesures_FK FOREIGN KEY (id_unite_mesures) REFERENCES unite_mesures(id)
+	,CONSTRAINT ingredients_categories0_FK FOREIGN KEY (id_categories) REFERENCES categories(id)
 )ENGINE=InnoDB;
 
 
@@ -111,12 +111,12 @@ CREATE TABLE Ingredients(
 
 CREATE TABLE relationRI(
         id                   Int NOT NULL ,
-        id_Recettes          Int NOT NULL ,
+        id_recettes          Int NOT NULL ,
         quantite_ingredients Int NOT NULL
-	,CONSTRAINT relationRI_PK PRIMARY KEY (id,id_Recettes)
+	,CONSTRAINT relationRI_PK PRIMARY KEY (id,id_recettes)
 
-	,CONSTRAINT relationRI_Ingredients_FK FOREIGN KEY (id) REFERENCES Ingredients(id)
-	,CONSTRAINT relationRI_Recettes0_FK FOREIGN KEY (id_Recettes) REFERENCES Recettes(id)
+	,CONSTRAINT relationRI_ingredients_FK FOREIGN KEY (id) REFERENCES ingredients(id)
+	,CONSTRAINT relationRI_recettes0_FK FOREIGN KEY (id_recettes) REFERENCES recettes(id)
 )ENGINE=InnoDB;
 
 
@@ -126,25 +126,25 @@ CREATE TABLE relationRI(
 
 CREATE TABLE relationIF(
         id                  Int NOT NULL ,
-        id_Ingredients      Int NOT NULL ,
+        id_ingredients      Int NOT NULL ,
         quantite_ingredient Int NOT NULL
-	,CONSTRAINT relationIF_PK PRIMARY KEY (id,id_Ingredients)
+	,CONSTRAINT relationIF_PK PRIMARY KEY (id,id_ingredients)
 
-	,CONSTRAINT relationIF_Factures_FK FOREIGN KEY (id) REFERENCES Factures(id)
-	,CONSTRAINT relationIF_Ingredients0_FK FOREIGN KEY (id_Ingredients) REFERENCES Ingredients(id)
+	,CONSTRAINT relationIF_factures_FK FOREIGN KEY (id) REFERENCES factures(id)
+	,CONSTRAINT relationIF_ingredients0_FK FOREIGN KEY (id_ingredients) REFERENCES ingredients(id)
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: relation7
+# Table: relationRC
 #------------------------------------------------------------
 
-CREATE TABLE relation7(
+CREATE TABLE relationRC(
         id          Int NOT NULL ,
-        id_Recettes Int NOT NULL
-	,CONSTRAINT relation7_PK PRIMARY KEY (id,id_Recettes)
+        id_recettes Int NOT NULL
+	,CONSTRAINT relationRC_PK PRIMARY KEY (id,id_recettes)
 
-	,CONSTRAINT relation7_categorie_FK FOREIGN KEY (id) REFERENCES categorie(id)
-	,CONSTRAINT relation7_Recettes0_FK FOREIGN KEY (id_Recettes) REFERENCES Recettes(id)
+	,CONSTRAINT relationRC_categories_FK FOREIGN KEY (id) REFERENCES categories(id)
+	,CONSTRAINT relationRC_recettes0_FK FOREIGN KEY (id_recettes) REFERENCES recettes(id)
 )ENGINE=InnoDB;
 
