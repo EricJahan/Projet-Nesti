@@ -5,10 +5,14 @@
         <title></title>
     </head>
     <body>
-        <?php
-        echo "j'aime le jambon et le saucisson - nicolas perez";
+    <?php include("navbar.php");
+    ?>
+    <?php 
+        include("controleur/content.php");
         ?>
-        <p>j'aime les huitres</p>
+    <?php include("footer.php");
+
+    ?>
     </body>
 </html>
 
