@@ -1,0 +1,98 @@
+body {
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.second-nav {
+    display:none;
+    position: absolute;
+}
+.burger:hover > .second-nav {
+    display: block;
+}
+div.pre {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+i {
+    margin: 10px;
+}
+.premier{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+img {
+    width: 75px;
+    margin: 10px;
+
+}
+li {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    justify-content: flex-start;
+    width: 150%;
+    margin: 10px;
+
+}
+
+.middle {
+    background-color: brown;
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.b1 {
+    width: 50%;
+   
+    background-color: aqua;
+    margin: 20px;
+
+}
+.b2 {
+    width: 50%;
+    height: 400px;
+    background-color: aqua;
+    margin: 20px;
+}
+
+
+footer{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.debut {
+    display: flex;
+   align-items: center;
+
+    justify-content: center;
+}
+.end {
+    display: flex;
+
+    flex-direction: row;
+}
+.w-100 {
+width: 75% !important;
+max-height: 500px;
+object-fit: cover;
+margin: auto;
+margin-bottom: 50px;
+border: 2px solid black;
+}
