@@ -22,15 +22,15 @@
   </div>
   <!--fincarousel---->
   <!----middle------>
-  <div class="middle">
+  <div class="middle-home">
     <div class="b1"><a href=""> bob</a></div>
     <div class="b2"><a href=""> joe</a></div>
   </div>
-  <div class="middle">
+  <div class="middle-home">
     <div class="b1"><a href=""> bob</a></div>
     <div class="b2"><a href=""> joe</a></div>
   </div>
-  <div class="middle">
+  <div class="middle-home">
     <div class="b1"><a href=""> bob</a></div>
     <div class="b2"><a href=""> joe</a></div>
   </div>

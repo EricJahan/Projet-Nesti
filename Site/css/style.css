@@ -49,7 +49,7 @@ input {
 
 }
 
-.middle {
+.middle-home {
     background-color: brown;
     width: 75%;
     margin: auto;
@@ -68,6 +68,16 @@ input {
     height: 400px;
     background-color: aqua;
     margin: 20px;
+}
+.middle-recette {
+    display: flex;
+    flex-direction: row;
+}
+.recette-gauche {
+
+}
+.recette-droite {
+    
 }
 
 
