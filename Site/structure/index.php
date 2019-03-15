@@ -6,8 +6,9 @@
     </head>
     <body>
         <?php
-        // put your code here
+        echo "j'aime le jambon et le saucisson - nicolas perez";
         ?>
+        <p>j'aime les huitres</p>
     </body>
 </html>
 
