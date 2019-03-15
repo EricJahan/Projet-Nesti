@@ -1,9 +1,11 @@
 # Modifications et insertions en DB
 
-Suppression en DB de "pseudo" sur la bdd "utilisateurs"
+- Suppression en DB de "pseudo" sur la bdd "utilisateurs"
 
-Correction globale de la DB
+- Correction globale de la DB
 
-Correction problème ID dans la bdd catégorie (n'était pas en AI)
+- Correction problème ID dans la bdd catégorie (n'était pas en AI)
 
-Premières insertions en DB dans "recettes" "adresses" "ingrédients" ...
+- Premières insertions en DB dans "recettes" "adresses" "ingrédients" ...
+
+- Premier remplissage de la DB des ingrédients, catégories ...
