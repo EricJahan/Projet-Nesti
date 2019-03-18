@@ -20,16 +20,15 @@
     </a>
   </div>
   <!--fincarousel---->
+
   <!----middle------>
   <div class="middle-home">
-    <div class="b1"><a href=""> bob</a></div>
-    <div class="b2"><a href=""> joe</a></div>
-  </div>
-  <div class="middle-home">
-    <div class="b1"><a href=""> bob</a></div>
-    <div class="b2"><a href=""> joe</a></div>
-  </div>
-  <div class="middle-home">
-    <div class="b1"><a href=""> bob</a></div>
-    <div class="b2"><a href=""> joe</a></div>
-  </div>
+    <?php 
+  foreach($recipeArray as $recipe){
+    ?>
+  <div class="b1"><a href=""> <?php echo $recipe->getNom(); ?></a></div>
+
+<?php
+  }
+    ?>
+  
