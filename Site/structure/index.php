@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
+<?php
+if(isset($_GET['loc']) && !empty($_GET['loc'])) {
+    $loc = $_GET['loc'];
+  
+}else {
+    $loc = "home";
+}
 
-    
-        <?php
-        echo "j'aime le jambon et le saucisson - nicolas perez";
-        ?>
-        <p>j'aime les huitres</p>
-    </body>
-</html>
+include("vue/template.php");
 
+?>

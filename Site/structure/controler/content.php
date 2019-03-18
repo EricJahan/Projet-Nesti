@@ -2,22 +2,18 @@
         switch($loc){
 
         case "home":
-        include("vue/slider.php");
-        case "band":        
-        include("vue/band.php");
-        include("vue/botpic.php");
+        include("vue/home.php");
+        case "moncompte":        
+        include("vue/monCompte.php");
         break;
-        case "tour":       
-        include("vue/tour.php");
+        case "magasin":       
+        include("vue/magasin.php");
         break;
-        case "contact":
-        include("vue/contact.php");
+        case "panier":
+        include("vue/panier.php");
         break;
-        case "login":
-        include("vue/login.php");
-        break;
-        case "inscription":
-        include("vue/inscription.php");
+        case "recette":
+        include("vue/recette.php");
         break;
         default:
         include("vue/404.php");
