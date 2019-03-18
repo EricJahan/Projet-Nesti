@@ -15,7 +15,6 @@ switch ($loc) {
     case 'allRecipes':
         include_once("controler/controlAllRecipes.php");
         break;
-
 }
 
 include("vue/template.php");
