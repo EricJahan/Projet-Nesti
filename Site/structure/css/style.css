@@ -2,36 +2,43 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
+
 /**************/
+
 /**Caroussel***/
+
 /**************/
+
 .w-100 {
     width: 75% !important;
     max-height: 500px;
     object-fit: cover;
     margin: auto;
     margin-bottom: 50px;
-    margin-top : 50px;
+    margin-top: 50px;
     border: 2px solid black;
-    }
+}
 
 /**************/
+
 /*****NAV******/
+
 /**************/
+
 nav {
-    background-color : #d6d6d4;
+    background-color: #d6d6d4;
 }
 
 .second-nav {
-    display:none;
+    display: none;
     position: absolute;
     z-index: 1;
-    background-color: #dc0800;  
+    background-color: #dc0800;
     height: 70px;
-    width: 99.4%; 
+    width: 99.4%;
 }
 
-.second-nav  li {
+.second-nav li {
     justify-content: center;
 }
 
@@ -43,30 +50,30 @@ nav {
     top: 50px;
 }
 
-
 .fas {
     margin: 10px;
 }
 
-.premier{
+.premier {
     display: grid;
     grid-template-columns: 0fr 0fr 0.7fr 0.3fr 0fr;
 }
-
 
 .logo {
     width: 75px;
     margin: 10px;
 }
 
-
 input {
     justify-content: flex-start;
     width: 150%;
     margin: 10px;
 }
+
 /******************/
+
 /******HOME PAGE***/
+
 /******************/
 
 .middle-home {
@@ -86,28 +93,41 @@ input {
 }
 
 /******************/
+
 /******recette*****/
+
 /******************/
 
 .middle-recette {
     margin-top: 70px;
     display: grid;
-    grid-template-columns: 15% 85% ;
-    
+    grid-template-columns: 15% 85%;
 }
+<<<<<<< HEAD
+.recette-gauche .pre {
+    margin: 6%;
+
+}
+=======
+
+>>>>>>> 14f3badea90f51083045d666019a0acee14ce12c
 .recette-gauche li {
     display: flex;
     margin: 10px;
-
 }
 
 .saison {
-    display:none;
+    display: none;
     position: absolute;
     z-index: 1;
     height: 100%;
-    width: 15%; 
-margin-top: 109px;
+<<<<<<< HEAD
+    margin-top: 109px;
+    margin-left: 10%;
+=======
+    width: 15%;
+    margin-top: 109px;
+>>>>>>> 14f3badea90f51083045d666019a0acee14ce12c
 }
 
 .pre:hover .saison {
@@ -117,12 +137,46 @@ margin-top: 109px;
     position: absolute;
     top: 10px;
 }
+.repas {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    margin-top: 109px;
+    margin-left: 10%;
+}
+
+.pre:hover .repas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+}
+.dessert {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    margin-top: 109px;
+    margin-left: 10%;
+}
+
+.pre:hover .dessert {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 10px;
+}
 
 /*****************/
+
 /******Foot*******/
+
 /*****************/
 
-footer{
+footer {
     background-color: #521861;
     display: flex;
     flex-direction: row;
@@ -135,7 +189,6 @@ footer{
     justify-content: center;
     margin: 10px;
     font-size: 30px;
-
 }
 
 .end {

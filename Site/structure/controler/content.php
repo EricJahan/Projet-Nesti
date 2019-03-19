@@ -1,31 +1,32 @@
 <?php
-        switch($loc){
+$title = "";
+switch ($loc) {
 
-        case "allRecipes":
-        include("vue/home.php");
-        case "moncompte":        
-        include("vue/monCompte.php");
-        break;
-        case "magasin":       
-        include("vue/magasin.php");
-        break;
+        case "home":
+                include("vue/home.php");
+
+        case "moncompte":
+                include("vue/monCompte.php");
+                break;
+        case "magasin":
+                include("vue/magasin.php");
+                break;
         case "panier":
-        include("vue/panier.php");
-        break;
+                include("vue/panier.php");
+                break;
         case "recette":
-        include("vue/recette.php");
-        break;
+                include("vue/recette.php");
+                break;
         case "company":
-        include("vue/company.php");
-        break;
+                include("vue/company.php");
+                break;
         case "legal":
-        include("vue/legal.php");
-        break;
+                include("vue/legal.php");
+                break;
         case "contact":
-        include("vue/contact.php");
-        break;
+                include("vue/contact.php");
+                break;
         default:
-        include("vue/404.php");
-        }
-
-?>
+                include("vue/404.php");
+}
+ 
