@@ -23,6 +23,12 @@ switch ($loc) {
     case 'magasin':
         include_once "controler/controlIngredient.php";
         break;
+    case 'uneRecette':
+        include_once 'controler/controlOneRecipe.php';
+        break;
+    case 'magasin':
+        include_once "controler/controlIngredient.php";
+        break; 
 }
 
 include("vue/template.php");
