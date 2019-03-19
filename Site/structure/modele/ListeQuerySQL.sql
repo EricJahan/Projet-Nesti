@@ -8,6 +8,7 @@
 ************************
 
 Récupérer toutes les recettes :
+Sans descrition :
 "SELECT `id`, `nom`, `quantite_personne`, `tempsPreparation` FROM `recettes` WHERE 1";
 
 Avec Description :

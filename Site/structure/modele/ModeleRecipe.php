@@ -16,7 +16,7 @@ class ModeleRecipe extends Connexion {
 
             $recipeObject->setId($row['id']);
             $recipeObject->setNom($row['nom']);
-            //$recipeObject->setNom($row['description']);
+            //$recipeObject->setDescription($row['description']);
             $recipeObject->setQuantite($row['quantite_personne']);
             $recipeObject->setTemp($row['tempsPreparation']);
 
