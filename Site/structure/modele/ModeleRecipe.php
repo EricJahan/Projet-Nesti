@@ -10,6 +10,7 @@ class ModeleRecipe extends Connexion {
 
         $sql = "SELECT id, nom, quantite_personne, tempsPreparation FROM `recettes` WHERE 1";
         //"SELECT `nom`, `description`, `quantite_personne`, `tempsPreparation` FROM `recettes` WHERE 1";
+        
         foreach  ($conn->query($sql) as $row) {
 
             $recipeObject = new StructRecette();

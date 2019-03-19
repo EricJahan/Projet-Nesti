@@ -15,6 +15,15 @@
         case "recette":
         include("vue/recette.php");
         break;
+        case "company":
+        include("vue/company.php");
+        break;
+        case "legal":
+        include("vue/legal.php");
+        break;
+        case "contact":
+        include("vue/contact.php");
+        break;
         default:
         include("vue/404.php");
         }

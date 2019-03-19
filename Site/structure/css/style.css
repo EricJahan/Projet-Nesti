@@ -35,7 +35,7 @@ nav {
     justify-content: center;
 }
 
-.pre:active .second-nav {
+.pre:hover .second-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,7 +47,7 @@ div.pre {
     background-color: #dc0800;
 }
 
-i {
+.fas {
     margin: 10px;
 }
 
@@ -88,6 +88,9 @@ input {
     text-align: center;
 }
 
+/******************/
+/******recette*****/
+/******************/
 
 /*****************/
 /******Foot*******/
@@ -104,7 +107,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
+    margin: 10px;
+    font-size: 30px;
+
 }
 
 .end {
@@ -112,3 +117,7 @@ footer{
     flex-direction: row;
 }
 
+.fab {
+    margin: 10px;
+    margin-left: 30px;
+}
