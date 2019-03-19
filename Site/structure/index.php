@@ -6,7 +6,7 @@ if (isset($_GET['loc']) && !empty($_GET['loc'])) {
 } else {
     $loc = "home";
 }
-
+ $title = $loc;
 switch ($loc) {
     case 'recipe':
         include_once("controler/controlOneRecipe.php");

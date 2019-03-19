@@ -1,10 +1,12 @@
 <?php
-$title = "";
+
+
+
 switch ($loc) {
 
         case "home":
                 include("vue/home.php");
-
+                break;
         case "moncompte":
                 include("vue/monCompte.php");
                 break;
@@ -16,6 +18,12 @@ switch ($loc) {
                 break;
         case "recette":
                 include("vue/recette.php");
+                break;
+        case "uneRecette":
+                include("vue/uneRecette.php");
+                break;
+        case "ingredient":
+                include("vue/ingredient.php");
                 break;
         case "company":
                 include("vue/company.php");
@@ -29,4 +37,5 @@ switch ($loc) {
         default:
                 include("vue/404.php");
 }
- 
+
+ ?>

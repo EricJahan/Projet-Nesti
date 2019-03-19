@@ -9,3 +9,10 @@ $recipeArray = $modeleRecipe -> allRecipes();
 //var_dump($recipeArray);
 
 ?>
+
+<?php 
+
+    $idImg = 0;
+    $titleImg = "";
+?>
+    <img src="img/image-<?php $idImg?>.jpg" alt="<?php $titleImg?>"/>
