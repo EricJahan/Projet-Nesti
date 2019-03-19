@@ -21,7 +21,7 @@ class Connexion
             die('Erreur : ' . $e->getMessage());
         }
     }
-
+ 
     public function getBdd()
     {
         if ($this->bdd == null) {
