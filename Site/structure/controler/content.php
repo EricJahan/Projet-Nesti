@@ -1,7 +1,7 @@
 <?php
         switch($loc){
 
-        case "allRecipes":
+        case "home":
         include("vue/home.php");
         case "moncompte":        
         include("vue/monCompte.php");

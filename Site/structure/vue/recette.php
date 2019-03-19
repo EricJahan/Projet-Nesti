@@ -15,15 +15,23 @@
      <li>dessert</li>
     </ul>
     <div class="middle-home">
-     <div class="b1"><a href=""> bob</a></div>
-     <div class="b1"><a href=""> joe</a></div>
-     <div class="b1"><a href=""> bob</a></div>
-     <div class="b1"><a href=""> joe</a></div>
-     <div class="b1"><a href=""> bob</a></div>
-     <div class="b1"><a href=""> joe</a></div>
-     <div class="b1"><a href=""> bob</a></div>
-     <div class="b1"><a href=""> joe</a></div>
-    </div>
+    <?php 
+  foreach($recipeArray as $recipe){
+    ?>
+
+  <div class="b1">
+     <h1> <?php print $recipe->getNom();?> </h1> 
+     <br/>
+      <p> Nombre de personne <?php print $recipe->getQuantite(); ?></p>
+  <br/>
+      <p> Temps requis <?php print $recipe->getTemp(); ?> </p>
+      <br/>  
+      <p> Description s<?php print $recipe->getDescription(); ?> </p>
+  </div>
+
+<?php
+  }
+    ?>
 
   </div>
 </div>

@@ -12,7 +12,10 @@ switch ($loc) {
     case 'recipe':
         include_once("controler/controlOneRecipe.php");
         break;
-    case 'allRecipes':
+    case 'home':
+        include_once("controler/controlAllRecipes.php");
+        break;
+    case 'recette':
         include_once("controler/controlAllRecipes.php");
         break;
 }
