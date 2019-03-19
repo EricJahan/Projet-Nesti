@@ -1,10 +1,12 @@
 <?php
 
-class Connexion {
+class Connexion
+{
 
     private $bdd;
 
-    private function connect() {
+    private function connect()
+    {
         try {
             $user = $_SERVER['HTTP_USER_AGENT'];
 
@@ -20,12 +22,12 @@ class Connexion {
         }
     }
 
-    public function getBdd() {
-        if ($this->bdd == NULL) {
+    public function getBdd()
+    {
+        if ($this->bdd == null) {
             $this->connect();
         }
         return $this->bdd;
     }
 }
-
-?>
+ 

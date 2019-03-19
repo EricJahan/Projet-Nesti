@@ -1,24 +1,21 @@
 <?php
-    include_once '../modele/Class_connexion.php';
-    include_once '../modele/Class_compte.php';
-    
-    //var_dump($_POST); Verification pour voir
+include_once '../modele/Class_connexion.php';
+include_once '../modele/Class_compte.php';
 
-    $login = filter_input(INPUT_POST , "login");
-    $password = filter_input(INPUT_POST, "password");
-    $pass_confirm = filter_input(INPUT_POST, "pass-confirm");
+//var_dump($_POST); Verification pour voir
 
-    if($password == $pass_confirm) {
-        echo("Les mots de passe correspondent");
-        $user = new Class_compte();
-        $user->setLogin($login);
-        $user->setPassword($password);
+$login = filter_input(INPUT_POST, "login");
+$password = filter_input(INPUT_POST, "password");
+$pass_confirm = filter_input(INPUT_POST, "pass-confirm");
 
-        $user->inscription();
+if ($password == $pass_confirm) {
+    echo ("Les mots de passe correspondent");
+    $user = new Class_compte();
+    $user->setLogin($login);
+    $user->setPassword($password);
 
-    }else {
-        die("Les mots de passe ne correspondent pas ");
-
-    }
-
-?>
+    $user->inscription();
+} else {
+    die("Les mots de passe ne correspondent pas ");
+}
+ 
