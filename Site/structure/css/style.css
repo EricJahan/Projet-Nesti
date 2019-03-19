@@ -23,6 +23,7 @@ nav {
 }
 
 .second-nav {
+    display:none;
     position: absolute;
     z-index: 1;
     background-color: #dc0800;  
@@ -67,6 +68,9 @@ input {
     width: 150%;
     margin: 10px;
 }
+/******************/
+/******HOME PAGE***/
+/******************/
 
 .middle-home {
     background-color: #dc0800;
