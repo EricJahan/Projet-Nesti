@@ -103,14 +103,11 @@ input {
     display: grid;
     grid-template-columns: 15% 85%;
 }
-<<<<<<< HEAD
 .recette-gauche .pre {
     margin: 6%;
 
 }
-=======
 
->>>>>>> 14f3badea90f51083045d666019a0acee14ce12c
 .recette-gauche li {
     display: flex;
     margin: 10px;
@@ -121,13 +118,9 @@ input {
     position: absolute;
     z-index: 1;
     height: 100%;
-<<<<<<< HEAD
     margin-top: 109px;
     margin-left: 10%;
-=======
-    width: 15%;
-    margin-top: 109px;
->>>>>>> 14f3badea90f51083045d666019a0acee14ce12c
+   
 }
 
 .pre:hover .saison {
@@ -168,6 +161,17 @@ input {
     align-items: flex-end;
     position: absolute;
     top: 10px;
+}
+/******************/
+
+/***uneRecette*****/
+
+/******************/
+
+.middle-uneRecette {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 15% 85%;
 }
 
 /*****************/

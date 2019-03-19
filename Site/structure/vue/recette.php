@@ -1,7 +1,6 @@
 <!----middle------>
 <div class="middle-recette">
     <ul class="recette-gauche">
-<<<<<<< HEAD
       <div class="pre">Saison
       <ul class="saison">
       <li><a href="#">Printemps</a></li>
@@ -10,34 +9,20 @@
      <li><a href="#">Hiver</a></li>
      </ul>
      </div>
-     <div class="pre">repas
+     <div class="pre">Repas
       <ul class="repas">
-      <li><a href="#">Prin</a></li>
-     <li><a href="#">Ee</a></li>
-     <li><a href="#">omne</a></li>
-     <li><a href="#">Hiv</a></li>
+      <li><a href="#">Poissons</a></li>
+     <li><a href="#">Viandes</a></li>
+     <li><a href="#">Volaille</a></li>
      </ul>
      </div>
-     <div class="pre">dessert
+     <div class="pre">Dessert
       <ul class="dessert">
-      <li><a href="#">emps</a></li>
-     <li><a href="#">Et</a></li>
-     <li><a href="#">Auto</a></li>
-     <li><a href="#">Her</a></li>
+      <li><a href="#">Tartes</a></li>
+     <li><a href="#">Verrines</a></li>
+     <li><a href="#">Entremets</a></li>
      </ul>
      </div>
-=======
-        <div class="pre">saison
-            <ul class="saison">
-                <li><a href="#">printemp</a></li>
-                <li><a href="#">ete</a></li>
-                <li><a href="#">automne</a></li>
-                <li><a href="#">hiver</a></li>
-            </ul>
-        </div>
-        <li>repas</li>
-        <li>dessert</li>
->>>>>>> 14f3badea90f51083045d666019a0acee14ce12c
     </ul>
     <div class="middle-home">
         <?php 
