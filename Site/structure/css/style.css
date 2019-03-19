@@ -172,9 +172,23 @@ input {
 .middle-uneRecette {
     margin-top: 70px;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 25% 50% 25%;
 }
-
+.ingrediant {
+    height: 250px;
+    margin-left: 15%;
+}
+.recette {
+    height: 250px;
+}
+.recette img {
+    height: 250px;
+    width: 500px;
+}
+.middle-uneRectteDeux {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
 /*****************/
 
 /******Foot*******/
