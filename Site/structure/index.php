@@ -1,10 +1,9 @@
 <?php
 
 
-if(isset($_GET['loc']) && !empty($_GET['loc'])) {
+if (isset($_GET['loc']) && !empty($_GET['loc'])) {
     $loc = $_GET['loc'];
-  
-}else {
+} else {
     $loc = "home";
 }
 
@@ -21,5 +20,4 @@ switch ($loc) {
 }
 
 include("vue/template.php");
-
-?>
+ 

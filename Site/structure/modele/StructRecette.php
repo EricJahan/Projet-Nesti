@@ -1,7 +1,8 @@
 <?php
 
-class StructRecette {
-    
+class StructRecette
+{
+
     private $id;
     private $nom;
     private $description;
@@ -11,7 +12,7 @@ class StructRecette {
 
     /**
      * Get the value of id
-     */ 
+     */
     public function getId()
     {
         return $this->id;
@@ -21,7 +22,7 @@ class StructRecette {
      * Set the value of id
      *
      * @return  self
-     */ 
+     */
     public function setId($id)
     {
         $this->id = $id;
@@ -31,7 +32,7 @@ class StructRecette {
 
     /**
      * Get the value of nom
-     */ 
+     */
     public function getNom()
     {
         return $this->nom;
@@ -41,7 +42,7 @@ class StructRecette {
      * Set the value of nom
      *
      * @return  self
-     */ 
+     */
     public function setNom($nom)
     {
         $this->nom = $nom;
@@ -51,7 +52,7 @@ class StructRecette {
 
     /**
      * Get the value of description
-     */ 
+     */
     public function getDescription()
     {
         return $this->description;
@@ -61,7 +62,7 @@ class StructRecette {
      * Set the value of description
      *
      * @return  self
-     */ 
+     */
     public function setDescription($description)
     {
         $this->description = $description;
@@ -71,7 +72,7 @@ class StructRecette {
 
     /**
      * Get the value of quantite
-     */ 
+     */
     public function getQuantite()
     {
         return $this->quantite;
@@ -81,7 +82,7 @@ class StructRecette {
      * Set the value of quantite
      *
      * @return  self
-     */ 
+     */
     public function setQuantite($quantite)
     {
         $this->quantite = $quantite;
@@ -91,7 +92,7 @@ class StructRecette {
 
     /**
      * Get the value of temp
-     */ 
+     */
     public function getTemp()
     {
         return $this->temp;
@@ -101,7 +102,7 @@ class StructRecette {
      * Set the value of temp
      *
      * @return  self
-     */ 
+     */
     public function setTemp($temp)
     {
         $this->temp = $temp;
@@ -109,5 +110,4 @@ class StructRecette {
         return $this;
     }
 }
-
-?>
+ 
