@@ -1,26 +1,31 @@
-<?php 
+<?php
 
-    class Connexion {
+class Connexion {
 
-        private $bdd;
+    private $bdd;
 
-        function connexion() {
-            try {
-                //$this -> bdd = new PDO('mysql:host=localhost;dbname=Projet-Nesti;charset=utf8', 'root', '');
-                 $this -> bdd = new PDO('mysql:host=localhost;dbname=Projet-Nesti;charset=utf8', 'root', 'root');
-            
-            }catch (Exception $e)
-            {
-                    die('Erreur : ' . $e->getMessage());
+    private function connect() {
+        try {
+            $user = $_SERVER['HTTP_USER_AGENT'];
+
+            if (stristr($user, 'Macintosh')) {
+                $mdp = "root";
+            } else {
+                $mdp = "";
             }
-        }
-    
-        public function getBdd(){
-            if ($this -> bdd == NULL ){
-                $this -> connexion();
-            }
-            return $this -> bdd;
+            $this->bdd = new PDO('mysql:host=localhost;dbname=Projet-Nesti;charset=utf8', 'root', $mdp);
+            //double requete pour plus de croquettes
+        } catch (Exception $e) {
+            die('Erreur : ' . $e->getMessage());
         }
     }
+
+    public function getBdd() {
+        if ($this->bdd == NULL) {
+            $this->connect();
+        }
+        return $this->bdd;
+    }
+}
 
 ?>
