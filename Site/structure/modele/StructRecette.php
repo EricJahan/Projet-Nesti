@@ -8,9 +8,6 @@ class StructRecette {
     private $quantite;
     private $temp;
 
-    
-
-
 
     /**
      * Get the value of id
