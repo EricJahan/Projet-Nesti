@@ -22,9 +22,6 @@ switch ($loc) {
         case "uneRecette":
                 include("vue/uneRecette.php");
                 break;
-        case "ingredient":
-                include("vue/ingredient.php");
-                break;
         case "company":
                 include("vue/company.php");
                 break;
