@@ -93,6 +93,27 @@ input {
     text-align: center;
 }
 
+/*******************/
+/*Ingredients Page**/
+/*******************/
+
+.middle-ingredients {
+    background-color: lightcyan;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.blocIngredient {
+    height: 200px;
+    background-color: lightblue;
+    margin: 10px;
+    text-align: center;
+    background: url(../img/ingredientDefaut.png) no-repeat;
+}
+
 /******************/
 
 /******recette*****/

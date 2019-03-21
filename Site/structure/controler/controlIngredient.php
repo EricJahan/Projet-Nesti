@@ -5,5 +5,3 @@
     include_once 'modele/ModeleIngredients.php';
     $modeleIngredient = new ModeleIngredients();
     $afficheTousIngredients = $modeleIngredient->afficheAllIngredients();
-
-    var_dump($afficheTousIngredients);

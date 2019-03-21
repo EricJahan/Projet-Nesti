@@ -13,29 +13,30 @@ class ModeleIngredients extends Connexion {
 
         $stmt = $this->getBdd()->query($strQuery);
 
-        /***********************/
+        /*         * ******************** */
 
         $array = [];
 
         foreach ($stmt as $row) {
 
-            $recipeObject = new StructIngredients();
+            $allIngredients = new StructIngredients();
 
-            $recipeObject->setId($row['id']);
-            $recipeObject->setNomIngredient($row['nom']);
-            $recipeObject->setPrixAuKilo($row['prix']);
-            $recipeObject->setCategorie($row['id_categories']);
-            $recipeObject->setUniteMesure($row['id_unite_mesures']);
+            $allIngredients->setId($row['id']);
+            $allIngredients->setNomIngredient($row['nom']);
+            $allIngredients->setPrixAuKilo($row['prix']);
+            $allIngredients->setCategorie($row['id_categories']);
+            $allIngredients->setUniteMesure($row['id_unite_mesures']);
 
-            array_push($array, $recipeObject);
+            array_push($array, $allIngredients);
         }
         return $array;
     }
-    
-        function afficheSearchIngredients($searchBar) {
-            $query = new QueryClass();
-            $strQuery = $query->querySearchIngredients();
-            $stmt = $this->getBdd()->prepare($strQuery);
-            $stmt->bindParam(':maVar', '%' . $searchBar . '%');
-        }
+
+    /*        function afficheSearchIngredients($searchBar) {
+      $query = new QueryClass();
+      $strQuery = $query->querySearchIngredients();
+      $stmt = $this->getBdd()->prepare($strQuery);
+      $stmt->bindParam(':maVar', '%' . $searchBar . '%');
+      }
+     */
 }
