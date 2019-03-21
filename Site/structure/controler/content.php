@@ -34,5 +34,5 @@ switch ($loc) {
         default:
                 include("vue/404.php");
 }
-
+        
  ?>
