@@ -34,9 +34,9 @@
             <br />
             <p> Nombre de personne <?php print $recipe->getQuantite(); ?></p>
             <br />
-            <p> Temps requis <?php print $recipe->getTemp(); ?> </p>
+            <p> Temps requis : <?php print $recipe->getTemp(); ?> </p>
             <br />
-            <p> Description s<?php print $recipe->getDescription(); ?> </p>
+            <p> Recette : <?php print $recipe->getDescription(); ?> </p>
         </div>
 
         <?php

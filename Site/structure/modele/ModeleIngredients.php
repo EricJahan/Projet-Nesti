@@ -17,10 +17,6 @@ class ModeleIngredients extends Connexion {
 
         $array = [];
 
-//        $conn = $this->getBdd();
-
-//        $sql = "SELECT * FROM `ingredients` WHERE 1";
-
         foreach ($stmt as $row) {
 
             $recipeObject = new StructIngredients();
@@ -42,6 +38,4 @@ class ModeleIngredients extends Connexion {
             $stmt = $this->getBdd()->prepare($strQuery);
             $stmt->bindParam(':maVar', '%' . $searchBar . '%');
         }
-
-
 }
