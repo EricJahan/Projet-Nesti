@@ -28,7 +28,7 @@ class ModeleIngredients extends Connexion {
             $recipeObject->setId($row['id']);
             $recipeObject->setNomIngredient($row['nom']);
             $recipeObject->setPrixAuKilo($row['prix']);
-            $recipeObject->setCategorie($row['categorie']);
+            $recipeObject->setCategorie($row['id_categories']);
             $recipeObject->setUniteMesure($row['id_unite_mesures']);
 
             array_push($array, $recipeObject);
