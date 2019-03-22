@@ -1,6 +1,6 @@
 <!----middle------>
 <div class="middle-recette">
-    <ul class="recette-gauche">
+    <ul class="">
       <div class="pre">Saison
       <ul class="saison">
       <li><a href="#">Printemps</a></li>
