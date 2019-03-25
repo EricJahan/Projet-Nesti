@@ -11,7 +11,7 @@
         </div>
         <li><a href="?loc=home"><i class="fas fa-home fa-2x"></i></a></li>
         <li><img class="logo" src="../../Conception/charte-graphique/logo/logo nesti 2.png" alt=""></li>
-        <li> <input type="text" placeholder="Search.."></li>
+        <li class="searchBar"> <input type="text" placeholder="Search.."></li>
         <li><i class="fas fa-cog fa-2x"></i></li>
     </ul>
 

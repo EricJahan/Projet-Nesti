@@ -67,8 +67,8 @@ nav {
 
 input {
     justify-content: flex-start;
-    width: 150%;
-    margin: 10px;
+    width: 100%;
+    margin: 13px;
 }
 
 /******************/
@@ -142,7 +142,7 @@ input {
     height: 100%;
     margin-top: 109px;
     margin-left: 10%;
-   
+
 }
 
 .pre:hover .saison {
@@ -225,4 +225,15 @@ footer {
 .fab {
     margin: 10px;
     margin-left: 30px;
+}
+
+
+/***********************/
+
+/* Test && temporaires */
+
+/***********************/
+
+.menu-gauche {
+    background-color: lightgreen;
 }
