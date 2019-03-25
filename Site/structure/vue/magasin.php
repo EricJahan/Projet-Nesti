@@ -30,7 +30,7 @@
             ?>
 
         <div class="blocIngredient">
-            <h1> <?php print $ingredients ->getNomIngredient(); ?> </h1>
+            <h1><a href="#"> <?php print $ingredients ->getNomIngredient(); ?> </a></h1>
             <br>
         </div>
 
