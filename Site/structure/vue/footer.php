@@ -1,10 +1,10 @@
 <footer>
 
     <ul class="debut">
-        <li><a href="#">contact</a> | </li>
-        <li><a href="#"> legal</a> | </li>
-        <li><a href="#"> company</a> | </li>
-        <li><a href="#"> blog</a></li>
+        <li><a href="?loc=contact">contact</a> | </li>
+        <li><a href="?loc=legal"> legal</a> | </li>
+        <li><a href="?loc=company"> company</a> | </li>
+        <li><a href="?loc=blog"> blog</a></li>
     </ul>
 
     <ul class="end">
