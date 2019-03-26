@@ -1,7 +1,5 @@
 <?php
 
-
-
 switch ($loc) {
 
         case "home":
