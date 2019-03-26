@@ -18,7 +18,7 @@
     <?php include("navbar.php"); ?>
 
     <?php 
-        include("controler/content.php");
+        include("controler/controlContent.php");
     ?>
 
     <!-- End Page Content -->
