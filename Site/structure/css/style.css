@@ -196,6 +196,10 @@ input {
 .middle-uneRecette {
     margin-top: 70px;
     display: grid;
+    grid-template-rows: 25% 50% 25%;
+}
+.center-uneRecette{
+    display: grid;
     grid-template-columns: 25% 50% 25%;
 }
 .ingrediant {
