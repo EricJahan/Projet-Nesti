@@ -1,5 +1,5 @@
 <?php 
-include_once("modele/ModeleRecipe.php");
+include_once("modele/ModeleRecettes.php");
 //Instaciation de la class
 $modeleRecipe  = new ModeleRecipe();
 
