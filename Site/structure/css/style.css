@@ -168,7 +168,10 @@ input {
 /***uneRecette*****/
 
 /******************/
-
+.uneRecette {
+    display: flex;
+    flex-direction: column;
+}
 .middle-uneRecette {
     margin-top: 70px;
     display: grid;

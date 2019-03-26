@@ -1,3 +1,4 @@
+<div class="uneRecette">
 <div class="middle-uneRecette">
     <div class="ingrediant">
     <ul>
@@ -19,8 +20,9 @@
             <br />
             <p> Temps requis <?php print $recipe->getTemp(); ?> </p>
             <br />
-            <p> Description s<?php print $recipe->getDescription(); ?> </p>
+            <p> Descriptions<?php print $recipe->getDescription(); ?> </p>
         </div>
     </div>
     
+</div>
 </div>
