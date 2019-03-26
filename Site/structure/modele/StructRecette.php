@@ -1,7 +1,6 @@
 <?php
 
-class StructRecette
-{
+class StructRecette {
 
     private $id;
     private $nom;
@@ -9,12 +8,10 @@ class StructRecette
     private $quantite;
     private $temp;
 
-
     /**
      * Get the value of id
      */
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
@@ -23,8 +20,7 @@ class StructRecette
      *
      * @return  self
      */
-    public function setId($id)
-    {
+    public function setId($id) {
         $this->id = $id;
 
         return $this;
@@ -33,8 +29,7 @@ class StructRecette
     /**
      * Get the value of nom
      */
-    public function getNom()
-    {
+    public function getNom() {
         return $this->nom;
     }
 
@@ -43,8 +38,7 @@ class StructRecette
      *
      * @return  self
      */
-    public function setNom($nom)
-    {
+    public function setNom($nom) {
         $this->nom = $nom;
 
         return $this;
@@ -53,8 +47,7 @@ class StructRecette
     /**
      * Get the value of description
      */
-    public function getDescription()
-    {
+    public function getDescription() {
         return $this->description;
     }
 
@@ -63,8 +56,7 @@ class StructRecette
      *
      * @return  self
      */
-    public function setDescription($description)
-    {
+    public function setDescription($description) {
         $this->description = $description;
 
         return $this;
@@ -73,8 +65,7 @@ class StructRecette
     /**
      * Get the value of quantite
      */
-    public function getQuantite()
-    {
+    public function getQuantite() {
         return $this->quantite;
     }
 
@@ -83,8 +74,7 @@ class StructRecette
      *
      * @return  self
      */
-    public function setQuantite($quantite)
-    {
+    public function setQuantite($quantite) {
         $this->quantite = $quantite;
 
         return $this;
@@ -93,8 +83,7 @@ class StructRecette
     /**
      * Get the value of temp
      */
-    public function getTemp()
-    {
+    public function getTemp() {
         return $this->temp;
     }
 
@@ -103,11 +92,10 @@ class StructRecette
      *
      * @return  self
      */
-    public function setTemp($temp)
-    {
+    public function setTemp($temp) {
         $this->temp = $temp;
 
         return $this;
     }
+
 }
- 

@@ -1,11 +1,11 @@
-<?php 
+<?php
+
 include_once("Connexion.php");
 include_once("modele/StructRecette.php");
-class ModeleRecipe extends Connexion
-{
 
-    function allRecipes()
-    {
+class ModeleRecipe extends Connexion {
+
+    function allRecipes() {
         $array = [];
 
         $conn = $this->getBdd();
@@ -25,10 +25,10 @@ class ModeleRecipe extends Connexion
             array_push($array, $recipeObject);
 
             /*  print $row['description'] . "\t";
-            print $row['quantite_personne'] . "\n";
-            print $row['tempsPreparation'] . "\n"; */
+              print $row['quantite_personne'] . "\n";
+              print $row['tempsPreparation'] . "\n"; */
         }
         return $array;
     }
+
 }
- 

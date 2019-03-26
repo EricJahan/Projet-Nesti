@@ -21,7 +21,7 @@
         include("controler/controlContent.php");
     ?>
 
-    <!-- End Page Content -->
+        <!-- End Page Content -->
     </div>
 
     <?php include("footer.php"); ?>
