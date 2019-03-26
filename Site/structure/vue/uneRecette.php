@@ -1,7 +1,7 @@
 <div class="uneRecette">
     <div class="middle-uneRecette">
         <div class="bNom">
-            <h1> <?php print $recipe->getNom(); ?> </h1>
+            <h2> <?php print $recipe->getNom(); ?> </h2>
         </div>
         <div class="center-uneRecette">
             <div class="ingrediant">
