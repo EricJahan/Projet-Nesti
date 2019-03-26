@@ -1,7 +1,5 @@
 <?php
 
-
-
 switch ($loc) {
 
         case "home":
@@ -34,5 +32,5 @@ switch ($loc) {
         default:
                 include("vue/404.php");
 }
-
+        
  ?>

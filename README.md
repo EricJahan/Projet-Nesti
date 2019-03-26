@@ -11,3 +11,10 @@
 - Création d'une maquette (mockup). [Eric]
 - Création de l'architecture du site (DIA). [Nicolas]
 
+
+
+NB gestion des images:
+    $idImg = 0;
+    $titleImg = "";
+
+    <img src="img/image-<?php $idImg?>.jpg" alt="<?php $titleImg?>"/>

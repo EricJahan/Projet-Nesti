@@ -1,12 +1,11 @@
 <?php
 
-
 if (isset($_GET['loc']) && !empty($_GET['loc'])) {
     $loc = $_GET['loc'];
 } else {
     $loc = "home";
 }
- $title = $loc;
+$title = $loc;
 switch ($loc) {
     case 'recipe':
         include_once "controler/controlOneRecipe.php";
@@ -24,12 +23,11 @@ switch ($loc) {
         include_once "controler/controlIngredient.php";
         break;
     case 'uneRecette':
-        include_once 'controler/controlOneRecipe.php';
+        include_once "controler/controlOneRecipe.php";
         break;
     case 'magasin':
         include_once "controler/controlIngredient.php";
-        break; 
+        break;
 }
 
 include("vue/template.php");
- 

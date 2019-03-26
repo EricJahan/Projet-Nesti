@@ -67,8 +67,8 @@ nav {
 
 input {
     justify-content: flex-start;
-    width: 150%;
-    margin: 10px;
+    width: 100%;
+    margin: 13px;
 }
 
 /******************/
@@ -91,6 +91,27 @@ input {
     background-color: aqua;
     margin: 20px;
     text-align: center;
+}
+
+/*******************/
+/*Ingredients Page**/
+/*******************/
+
+.middle-ingredients {
+    background-color: lightcyan;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.blocIngredient {
+    height: 200px;
+    background-color: lightblue;
+    margin: 10px;
+    text-align: center;
+    background: url(../img/ingredientDefaut.png) no-repeat;
 }
 
 /******************/
@@ -121,7 +142,7 @@ input {
     height: 100%;
     margin-top: 109px;
     margin-left: 10%;
-   
+
 }
 
 .pre:hover .saison {
@@ -221,4 +242,15 @@ footer {
 .fab {
     margin: 10px;
     margin-left: 30px;
+}
+
+
+/***********************/
+
+/* Test && temporaires */
+
+/***********************/
+
+.menu-gauche {
+    background-color: lightgreen;
 }

@@ -12,6 +12,6 @@ class QueryClass {
     }
     
     function querySearchIngredients(){
-        return "SELECT * FROM `ingredients` WHERE `nom` LIKE :maVar";
+        return "SELECT * FROM `ingredients` WHERE `nom` LIKE 1";
     }
 }
