@@ -1,13 +1,9 @@
 <nav>
     <ul class="premier">
 
-        <div class="pre"><i class=" fas fa-bars fa-2x"></i>
-            <ul class="second-nav">
-                <li><a href="?loc=recette">Recette</a></li>
-                <li><a href="?loc=magasin">Magasin</a></li>
-                <li><a href="?loc=panier">Panier</a></li>
-            </ul>
-        </div>
+       <i class=" fas fa-bars fa-2x"></i>
+            
+        
 
         <li><a href="?loc=home"><i class="fas fa-home fa-2x"></i></a></li>
         <li><img class="logo" src="img/logo_nesti_2.png" alt=""></li>
@@ -16,7 +12,7 @@
             <ul>
                 <li id="js-connexion">Connexion </li>
                 <li id="js-inscription">Inscription </li>
-                <li id="js-compte">Mon compte </li>
+                <li><a href="?loc=monCompte">Mon compte</a> </li>
             </ul>
         </div>
         <li><i class="fas fa-cog fa-2x"></i></li>
@@ -24,19 +20,38 @@
 
 </nav> 
 
+<!----------------------->
+<!--ONGLET DE CONNEXION-->
+<!----------------------->
+
 <section class="connexion">
     <form action="">
         <label for="">login<input type="text"></label>
         <label for="">mot de passe<input type="text"></label>
+        <input type="text" value="envoyer" class="button-nav">
     </form>
 </section>
+
+<!----------------------->
+<!--ONGLET INSCRIPTION--->
+<!----------------------->
 
 <section class="inscription">
     <form action="">
         <label for="">Adresse mail<input type="text"></label>
         <label for="">login<input type="text"></label>
         <label for="">mot de passe<input type="text"></label>
-        <input type="text" value="envoyer">
+        <input type="text" value="envoyer" class="button-nav">
     </form>
 </section>
 
+
+<!----------------------->
+<!---BARRE SECONDAIRE---->
+<!----------------------->
+
+<ul class="second-nav">
+                <li><a href="?loc=recette">Recette</a></li>
+                <li><a href="?loc=magasin">Magasin</a></li>
+                <li><a href="?loc=panier">Panier</a></li>
+            </ul>

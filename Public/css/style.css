@@ -7,7 +7,15 @@ body {
     min-height: 84vh;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
+a:hover {
+    color: black;
+    text-decoration: none;
+}
 /**************/
 
 
@@ -43,7 +51,6 @@ nav {
 }
 
 .second-nav {
-    display: none;
     position: absolute;
     z-index: 1;
     background-color: darkgrey;
@@ -55,7 +62,7 @@ nav {
     justify-content: center;
 }
 
-.pre:hover .second-nav {
+.second-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,9 +94,12 @@ nav {
     position: absolute;
     border: 1px solid black;
     right: 0;
-    width: 200px;
+    width: 300px;
     text-align: center;  
-
+    z-index: 10000;
+    padding: 20px;
+    line-height: 30px;
+    background-color: white;
 }
 
 .connexion label input {
@@ -100,11 +110,17 @@ nav {
 .inscription {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     position: absolute;
     border: 1px solid black;
     right: 0px;  
     text-align: center;  
+    z-index: 10000;
+    padding: 20px;
+    line-height: 30px;
+    background-color: white;
+
+
 }
 .inscription input {
     width: 100%;
@@ -112,6 +128,10 @@ nav {
 }
 
 .inscription form button {
+    text-align: center;
+}
+
+.button-nav {
     text-align: center;
 }
 /*******************/

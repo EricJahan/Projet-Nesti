@@ -1,6 +1,8 @@
 
 $(".connexion").hide();
 $(".inscription").hide();
+$(".second-nav").hide();
+
 
 $(document).ready(function(){
     $("#js-connexion").click(function(){
@@ -17,7 +19,7 @@ $(document).ready(function(){
   });
 
   $(document).ready(function(){
-    $(".pre").click(function(){
+    $(".fa-bars").click(function(){
       $(".second-nav").toggle(200);
       $(".inscription").hide();
     });
