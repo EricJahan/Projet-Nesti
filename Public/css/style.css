@@ -36,7 +36,7 @@ nav {
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: #dc0800;
+    background-color: darkgrey;
     height: 70px;
     width: 99.4%;
 }
@@ -110,7 +110,6 @@ input {
 }
 
 .b1 {
-    height: 400px;
     background-color: aqua;
     margin: 20px;
     text-align: center;
@@ -191,9 +190,10 @@ input {
 /***uneRecette*****/
 
 /******************/
-*.uneRecette {
-    display: flex;
-    flex-direction: column;
+h2 {
+    text-align: center;
+    margin: 2%;
+    font-size: 300%;
 }
 .middle-uneRecette {
     margin-top: 70px;
@@ -202,7 +202,7 @@ input {
 }
 .center-uneRecette{
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 33% 33% 33%;
 }
 .ingrediant {
     height: 250px;
@@ -217,7 +217,9 @@ input {
 }
 .middle-uneRectteDeux {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    width: 600px;
+margin: auto;
+  
 }
 /*****************/
 
