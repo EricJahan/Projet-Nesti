@@ -6,20 +6,14 @@ body {
 .global-height {
     min-height: 84vh;
 }
-
-
 /**************/
-
 
 /**Caroussel***/
 
-
 /**************/
-
-.carousel-inner {
+.carousel-inner{
     margin-top: 70px;
 }
-
 .w-100 {
     width: 75% !important;
     max-height: 500px;
@@ -29,12 +23,9 @@ body {
     border: 2px solid black;
 }
 
-
 /**************/
 
-
 /*****NAV******/
-
 
 /**************/
 
@@ -46,7 +37,7 @@ nav {
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: darkgrey;
+    background-color: #dc0800;
     height: 70px;
     width: 99.4%;
 }
@@ -105,11 +96,7 @@ nav {
 
 
 /*******************/
-
-
 /*Ingredients Page**/
-
-
 /*******************/
 
 .middle-ingredients {
@@ -129,12 +116,9 @@ nav {
     background: url(../img/ingredientDefaut.png) no-repeat;
 }
 
-
 /******************/
 
-
 /******HOME PAGE***/
-
 
 /******************/
 
@@ -148,17 +132,15 @@ nav {
 }
 
 .b1 {
+    height: 400px;
     background-color: aqua;
     margin: 20px;
     text-align: center;
 }
 
-
 /******************/
 
-
 /******recette*****/
-
 
 /******************/
 
@@ -167,9 +149,9 @@ nav {
     display: grid;
     grid-template-columns: 15% 85%;
 }
-
 .recette-gauche .pre {
     margin: 6%;
+
 }
 
 .recette-gauche li {
@@ -184,10 +166,7 @@ nav {
     height: 100%;
     margin-top: 109px;
     margin-left: 10%;
-}
-
-.pre {
-    margin-bottom: 5%;
+   
 }
 
 .pre:hover .saison {
@@ -195,15 +174,14 @@ nav {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 5%;
+    top: 10px;
 }
-
 .repas {
-    display: none;
+    display:none;
     position: absolute;
     z-index: 1;
     height: 100%;
-    margin-top: 8.7%;
+    margin-top: 109px;
     margin-left: 10%;
 }
 
@@ -212,15 +190,14 @@ nav {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 5%;
+    top: 10px;
 }
-
 .dessert {
-    display: none;
+    display:none;
     position: absolute;
     z-index: 1;
     height: 100%;
-    margin-top: 10.6%;
+    margin-top: 109px;
     margin-left: 10%;
 }
 
@@ -229,93 +206,44 @@ nav {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 5%;
+    top: 10px;
 }
-
-.pre>ul>li {
-    margin-bottom: 5%;
-}
-
-
 /******************/
-
 
 /***uneRecette*****/
 
-
 /******************/
-
-h2 {
-    text-align: center;
-    margin: 2%;
-    font-size: 300%;
+*.uneRecette {
+    display: flex;
+    flex-direction: column;
 }
-
 .middle-uneRecette {
     margin-top: 70px;
     display: grid;
     grid-template-rows: 25% 50% 25%;
 }
-
-.center-uneRecette {
+.center-uneRecette{
     display: grid;
-    grid-template-columns: 3% 29% 36% 33%;
+    grid-template-columns: 25% 50% 25%;
 }
-
 .ingrediant {
     height: 250px;
     margin-left: 15%;
-    display: grid;
-    grid-template-rows: 77% 23%;
-    border: solid black 1px;
 }
-
-.ingrediant>p {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: solid black 1px;
-}
-
-button {
-    width: 63px;
-    height: 54px;
-    background: #ffffff;
-    font: bold 13px Arial;
-    border-radius: 50%;
-    border: none;
-    color: rgb(0, 0, 0);
-    border: solid black 1px;
-}
-
 .recette {
     height: 250px;
 }
-
-.recette-texte {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: solid black 1px;
-}
-
 .recette img {
     height: 250px;
-    width: 100%;
+    width: 500px;
 }
-
 .middle-uneRectteDeux {
     display: grid;
-    width: 610px;
-    margin: auto;
+    grid-template-columns: 33% 33% 33%;
 }
-
-
 /*****************/
 
-
 /******Foot*******/
-
 
 /*****************/
 
@@ -344,13 +272,8 @@ footer {
     margin-left: 30px;
 }
 
-
 /**************************/
-
-
 /*********FORM*************/
-
-
 /**************************/
 
 .contact-titre {
@@ -378,13 +301,8 @@ footer {
     margin-bottom: 10px;
 }
 
-
 /**************************/
-
-
 /*********404 ERR*************/
-
-
 /**************************/
 
 .quatre-cent-quatre {
