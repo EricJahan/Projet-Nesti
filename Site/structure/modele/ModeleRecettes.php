@@ -3,11 +3,9 @@
 include_once("Connexion.php");
 include_once("modele/StructRecette.php");
 
-class ModeleRecipe extends Connexion
-{
+class ModeleRecipe extends Connexion {
 
-    function allRecipes()
-    {
+    function allRecipes() {
         $array = [];
 
         $conn = $this->getBdd();
@@ -32,6 +30,7 @@ class ModeleRecipe extends Connexion
         }
         return $array;
     }
+
     function oneRecipeById($id) {
         $conn = $this->getBdd();
         $recipeObject = new StructRecette();
@@ -39,7 +38,7 @@ class ModeleRecipe extends Connexion
 
         foreach ($conn->query($sql) as $row) {
 
-            
+
 
             $recipeObject->setId($row['id']);
             $recipeObject->setNom($row['nom']);
@@ -49,4 +48,5 @@ class ModeleRecipe extends Connexion
         }
         return $recipeObject;
     }
+
 }
