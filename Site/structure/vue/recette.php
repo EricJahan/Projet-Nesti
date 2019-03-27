@@ -32,12 +32,11 @@
             <div class="b1">
                 <h1> <?php print $recipe->getNom(); ?> </h1>
                 <br />
-                <p> Nombre de personne <?php print $recipe->getQuantite(); ?></p>
+                <p> Nombre de personne <?php echo $recipe->getQuantite(); ?></p>
                 <br />
-                <p> Temps requis : <?php print $recipe->getTemp(); ?> </p>
+                <p> Temps requis : <?php echo $recipe->getTemp(); ?> </p>
                 <br />
-                <img src="img/recettes/recette<?php echo $recipe->getId(); ?>.jpg">
-                <p> Recette : <?php print $recipe->getDescription(); ?> </p>
+                <img src="img/recettes/recette<?php echo $recipe->getId(); ?>.jpg" alt="Image non chargée">
             </div>
 
             <?php
