@@ -1,6 +1,6 @@
 
 <?php
-include_once '../Site/structure/controler/Autoloader.php';
+include_once '../Site/structure/controler/AutoLoader.php';
 AutoLoader::register();
 
 if (isset($_GET['loc']) && !empty($_GET['loc'])) {
