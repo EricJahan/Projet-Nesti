@@ -26,7 +26,7 @@
     <?php 
     foreach ($recipeArray as $recipe) {
         ?>
-    <div class="b1"><a href=""> <?php echo $recipe->getNom(); ?></a></div>
+    <div class="b1"><a href="index.php?loc=uneRecette&id=<?php echo $recipe->getId();?>"> <?php echo $recipe->getNom(); ?></a></div>
 
     <?php
 
