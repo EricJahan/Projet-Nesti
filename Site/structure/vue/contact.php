@@ -1,7 +1,8 @@
-<h1 class="contact">Nous contacter</h1>
+<h1 class="contact-titre">Nous contacter</h1>
 
+<section class="contact global-height">
 <form action="form.php" method="post">
-    
+
     <label for=""> Nom:
         <input type="text" name="nom">
     </label>
@@ -19,3 +20,4 @@
     </label>
         <input type="submit" value="Envoyer">
 </form>
+    </section>
