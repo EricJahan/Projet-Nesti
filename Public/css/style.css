@@ -139,7 +139,7 @@ nav {
 /******************/
 
 .middle-home {
-    background-color: #dc0800;
+    background-color: #ffffff;
     width: 90%;
     margin: auto;
     display: grid;
@@ -148,7 +148,7 @@ nav {
 }
 
 .b1 {
-    background-color: aqua;
+    background-color: lightgray;
     margin: 20px;
     text-align: center;
     padding: 10px;
@@ -278,7 +278,7 @@ h2 {
     border: solid black 1px;
 }
 
-button {
+.ingrediant>p>button {
     width: 63px;
     height: 54px;
     background: #ffffff;
