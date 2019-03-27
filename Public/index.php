@@ -22,6 +22,9 @@ switch ($loc) {
     case 'magasin':
         $fileName .= "controlIngredient";
         break;
+    case 'contact':
+        $fileName .= "controlContact";
+        break;
 }
 $fileName .= ".php";
 include_once $fileName;
