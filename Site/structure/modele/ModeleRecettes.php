@@ -1,8 +1,5 @@
 <?php
-/*
-include_once("Connexion.php");
-include_once("modele/StructRecette.php");
-*/
+
 class ModeleRecettes extends Connexion {
 
     function allRecipes() {

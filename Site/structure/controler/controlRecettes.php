@@ -1,6 +1,5 @@
 <?php 
-//include_once("modele/ModeleRecettes.php");
-//Instanciation de la class
+
 $modeleRecipe  = new ModeleRecettes();
 
 $recipeArray = $modeleRecipe -> allRecipes();

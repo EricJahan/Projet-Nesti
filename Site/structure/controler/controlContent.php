@@ -6,7 +6,7 @@ switch ($loc) {
         case "home":
             $fileName .= "home";
                 break;
-        case "moncompte":
+        case "monCompte":
                 $fileName .= "monCompte";
                 break;
         case "magasin":

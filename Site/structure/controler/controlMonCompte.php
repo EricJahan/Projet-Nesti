@@ -1,0 +1,3 @@
+<?php 
+
+$modeleMonCompte = new ModeleMonCompte();

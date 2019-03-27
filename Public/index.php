@@ -25,6 +25,9 @@ switch ($loc) {
     case 'contact':
         $fileName .= "controlContact";
         break;
+    case 'monCompte':
+        $fileName .= "controlMonCompte";
+        break;
 }
 $fileName .= ".php";
 if (file_exists($fileName)){
