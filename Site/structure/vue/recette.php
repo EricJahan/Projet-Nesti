@@ -36,6 +36,7 @@
                 <br />
                 <p> Temps requis : <?php print $recipe->getTemp(); ?> </p>
                 <br />
+                <img src="img/recettes/recette<?php echo $recipe->getId(); ?>.jpg">
                 <p> Recette : <?php print $recipe->getDescription(); ?> </p>
             </div>
 
