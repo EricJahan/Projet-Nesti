@@ -1,13 +1,11 @@
 <nav>
     <ul class="premier">
 
-       <i class=" fas fa-bars fa-2x"></i>
-            
-        
-
+        <i class=" fas fa-bars fa-2x"></i>
         <li><a href="?loc=home"><i class="fas fa-home fa-2x"></i></a></li>
         <li><img class="logo" src="img/logo_nesti_2.png" alt=""></li>
         <li class="search-bar"> <input type="text" placeholder="Search.."></li>
+
         <div class="login">
             <ul>
                 <li id="js-connexion">Connexion </li>
@@ -15,9 +13,10 @@
                 <li><a href="?loc=monCompte">Mon compte</a> </li>
             </ul>
         </div>
-        <li><i class="fas fa-cog fa-2x"></i></li>
-    </ul>
 
+        <li><i class="fas fa-cog fa-2x"></i></li>
+
+    </ul>
 </nav> 
 
 <!----------------------->
@@ -51,7 +50,7 @@
 <!----------------------->
 
 <ul class="second-nav">
-                <li><a href="?loc=recette">Recette</a></li>
-                <li><a href="?loc=magasin">Magasin</a></li>
-                <li><a href="?loc=panier">Panier</a></li>
-            </ul>
+    <li><a href="?loc=recette"><i class="fas fa-utensils"></i>Recette</a></li>
+    <li><a href="?loc=magasin"><i class="fas fa-barcode"></i>Magasin</a></li>
+    <li><a href="?loc=panier"><i class="fas fa-shopping-basket"></i></i>Panier</a></li>
+</ul>
