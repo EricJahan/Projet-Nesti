@@ -3,15 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/vue/magasin.php</file>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/modele/StructRecette.php</file>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/controler/controlIngredient.php</file>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/vue/navbar.php</file>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/index.php</file>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/css/style.css</file>
+            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/controler/controlMonCompte.php</file>
+            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/modele/ModeleRecettes.php</file>
+            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/modele/ModeleMonCompte.php</file>
+            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/controler/controlUneRecette.php</file>
             <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/vue/recette.php</file>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/vue/template.php</file>
-            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/modele/ModeleRecipe.php</file>
+            <file>file:/Applications/MAMP/htdocs/ProjetNesti/Site/structure/vue/monCompte.php</file>
         </group>
     </open-files>
 </project-private>
