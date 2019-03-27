@@ -88,7 +88,8 @@ nav {
     border: 1px solid black;
     right: 0;
     width: 200px;
-    opacity: 0;
+    text-align: center;  
+
 }
 
 .connexion label input {
@@ -97,13 +98,22 @@ nav {
 }
 
 .inscription {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
     position: absolute;
     border: 1px solid black;
-    right: 0px;
-    opacity: 0;
+    right: 0px;  
+    text-align: center;  
+}
+.inscription input {
+    width: 100%;
+
 }
 
-
+.inscription form button {
+    text-align: center;
+}
 /*******************/
 
 

@@ -14,9 +14,9 @@
         <li class="search-bar"> <input type="text" placeholder="Search.."></li>
         <div class="login">
             <ul>
-                <li><a href="#" >Connexion </a></li>
-                <li><a href="#" >Inscription <a/></li>
-                <li><a href="#" >Mon compte </a></li>
+                <li id="js-connexion">Connexion </li>
+                <li id="js-inscription">Inscription </li>
+                <li id="js-compte">Mon compte </li>
             </ul>
         </div>
         <li><i class="fas fa-cog fa-2x"></i></li>
