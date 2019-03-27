@@ -2,17 +2,24 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
+
 section {
     min-height: 84vh;
 }
+
+
 /**************/
+
 
 /**Caroussel***/
 
+
 /**************/
-.carousel-inner{
+
+.carousel-inner {
     margin-top: 70px;
 }
+
 .w-100 {
     width: 75% !important;
     max-height: 500px;
@@ -22,9 +29,12 @@ section {
     border: 2px solid black;
 }
 
+
 /**************/
 
+
 /*****NAV******/
+
 
 /**************/
 
@@ -73,8 +83,13 @@ input {
     width: 300px;
 }
 
+
 /*******************/
+
+
 /*Ingredients Page**/
+
+
 /*******************/
 
 .middle-ingredients {
@@ -94,9 +109,12 @@ input {
     background: url(../img/ingredientDefaut.png) no-repeat;
 }
 
+
 /******************/
 
+
 /******HOME PAGE***/
+
 
 /******************/
 
@@ -115,9 +133,12 @@ input {
     text-align: center;
 }
 
+
 /******************/
 
+
 /******recette*****/
+
 
 /******************/
 
@@ -126,9 +147,9 @@ input {
     display: grid;
     grid-template-columns: 15% 85%;
 }
+
 .recette-gauche .pre {
     margin: 6%;
-
 }
 
 .recette-gauche li {
@@ -143,7 +164,10 @@ input {
     height: 100%;
     margin-top: 109px;
     margin-left: 10%;
-   
+}
+
+.pre {
+    margin-bottom: 5%;
 }
 
 .pre:hover .saison {
@@ -151,14 +175,15 @@ input {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 10px;
+    top: 5%;
 }
+
 .repas {
-    display:none;
+    display: none;
     position: absolute;
     z-index: 1;
     height: 100%;
-    margin-top: 109px;
+    margin-top: 8.7%;
     margin-left: 10%;
 }
 
@@ -167,14 +192,15 @@ input {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 10px;
+    top: 5%;
 }
+
 .dessert {
-    display:none;
+    display: none;
     position: absolute;
     z-index: 1;
     height: 100%;
-    margin-top: 109px;
+    margin-top: 10.6%;
     margin-left: 10%;
 }
 
@@ -183,47 +209,93 @@ input {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 10px;
+    top: 5%;
 }
+
+.pre>ul>li {
+    margin-bottom: 5%;
+}
+
+
 /******************/
+
 
 /***uneRecette*****/
 
+
 /******************/
+
 h2 {
     text-align: center;
     margin: 2%;
     font-size: 300%;
 }
+
 .middle-uneRecette {
     margin-top: 70px;
     display: grid;
     grid-template-rows: 25% 50% 25%;
 }
-.center-uneRecette{
+
+.center-uneRecette {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 3% 29% 36% 33%;
 }
+
 .ingrediant {
     height: 250px;
     margin-left: 15%;
+    display: grid;
+    grid-template-rows: 77% 23%;
+    border: solid black 1px;
 }
+
+.ingrediant>p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid black 1px;
+}
+
+button {
+    width: 63px;
+    height: 54px;
+    background: #ffffff;
+    font: bold 13px Arial;
+    border-radius: 50%;
+    border: none;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+}
+
 .recette {
     height: 250px;
 }
+
+.recette-texte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid black 1px;
+}
+
 .recette img {
     height: 250px;
-    width: 500px;
+    width: 100%;
 }
+
 .middle-uneRectteDeux {
     display: grid;
-    width: 600px;
-margin: auto;
-  
+    width: 610px;
+    margin: auto;
 }
+
+
 /*****************/
 
+
 /******Foot*******/
+
 
 /*****************/
 
@@ -252,8 +324,13 @@ footer {
     margin-left: 30px;
 }
 
+
 /**************************/
+
+
 /*********FORM*************/
+
+
 /**************************/
 
 .contact {
@@ -261,8 +338,9 @@ footer {
     text-align: center;
     margin-bottom: 25px;
 }
+
 form {
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     width: 600px;
@@ -273,14 +351,20 @@ label {
     display: flex;
     flex-direction: column;
 }
+
 input {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+
 /**************************/
+
+
 /*********404 ERR*************/
+
+
 /**************************/
 
 .quatre-cent-quatre {
