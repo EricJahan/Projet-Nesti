@@ -26,6 +26,7 @@ switch ($loc) {
                 break;
         default:
                 $fileName .= "404";
+                break;
 }
 
 $fileName .= ".php";

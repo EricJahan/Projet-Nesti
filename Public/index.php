@@ -11,7 +11,7 @@ if (isset($_GET['loc']) && !empty($_GET['loc'])) {
 $title = $loc;
 $fileName = "../Site/structure/controler/";
 switch ($loc) {
-    case 'recipe':
+//    case 'recipe':
     case 'uneRecette':
         $fileName .= "controlUneRecette";
         break;
@@ -27,6 +27,7 @@ switch ($loc) {
         break;
 }
 $fileName .= ".php";
+if (file_exists($fileName)){
 include_once $fileName;
+}
 include("../Site/structure/vue/template.php");
-
