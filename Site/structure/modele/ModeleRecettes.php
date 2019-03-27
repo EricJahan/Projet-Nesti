@@ -1,9 +1,9 @@
 <?php
-
+/*
 include_once("Connexion.php");
 include_once("modele/StructRecette.php");
-
-class ModeleRecipe extends Connexion {
+*/
+class ModeleRecettes extends Connexion {
 
     function allRecipes() {
         $array = [];

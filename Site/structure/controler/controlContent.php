@@ -1,30 +1,34 @@
 <?php
 
-switch ($loc) {
+$fileName = "../Site/structure/vue/";
 
+switch ($loc) {
         case "home":
-                include("vue/home.php");
+            $fileName .= "home";
                 break;
         case "moncompte":
-                include("vue/monCompte.php");
+                $fileName .= "monCompte";
                 break;
         case "magasin":
-                include("vue/magasin.php");
+                $fileName .= "magasin";
                 break;
         case "panier":
-                include("vue/panier.php");
+                $fileName .= "panier";
                 break;
         case "recette":
-                include("vue/recette.php");
+                $fileName .= "recette";
                 break;
         case "uneRecette":
-                include("vue/uneRecette.php");
+                $fileName .= "uneRecette";
                 break;
         case "contact":
-                include("vue/contact.php");
+                $fileName .= "contact";
                 break;
         default:
-                include("vue/404.php");
+                $fileName .= "404";
 }
+
+$fileName .= ".php";
         
+include_once $fileName;
  ?>
