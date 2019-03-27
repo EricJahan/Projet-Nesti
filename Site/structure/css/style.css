@@ -2,17 +2,24 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
+
 .global-height {
     min-height: 84vh;
 }
+
+
 /**************/
+
 
 /**Caroussel***/
 
+
 /**************/
-.carousel-inner{
+
+.carousel-inner {
     margin-top: 70px;
 }
+
 .w-100 {
     width: 75% !important;
     max-height: 500px;
@@ -22,9 +29,12 @@ body {
     border: 2px solid black;
 }
 
+
 /**************/
 
+
 /*****NAV******/
+
 
 /**************/
 
@@ -79,21 +89,27 @@ nav {
     right: 0;
     width: 200px;
     opacity: 0;
-
 }
+
 .connexion label input {
     width: 100%;
     height: 50%;
 }
+
 .inscription {
     position: absolute;
     border: 1px solid black;
     right: 0px;
     opacity: 0;
-
 }
+
+
 /*******************/
+
+
 /*Ingredients Page**/
+
+
 /*******************/
 
 .middle-ingredients {
@@ -113,9 +129,12 @@ nav {
     background: url(../img/ingredientDefaut.png) no-repeat;
 }
 
+
 /******************/
 
+
 /******HOME PAGE***/
+
 
 /******************/
 
@@ -135,9 +154,12 @@ nav {
     text-align: center;
 }
 
+
 /******************/
 
+
 /******recette*****/
+
 
 /******************/
 
@@ -146,9 +168,9 @@ nav {
     display: grid;
     grid-template-columns: 15% 85%;
 }
+
 .recette-gauche .pre {
     margin: 6%;
-
 }
 
 .recette-gauche li {
@@ -163,7 +185,6 @@ nav {
     height: 100%;
     margin-top: 109px;
     margin-left: 10%;
-   
 }
 
 .pre:hover .saison {
@@ -173,8 +194,9 @@ nav {
     position: absolute;
     top: 10px;
 }
+
 .repas {
-    display:none;
+    display: none;
     position: absolute;
     z-index: 1;
     height: 100%;
@@ -189,8 +211,9 @@ nav {
     position: absolute;
     top: 10px;
 }
+
 .dessert {
-    display:none;
+    display: none;
     position: absolute;
     z-index: 1;
     height: 100%;
@@ -205,42 +228,61 @@ nav {
     position: absolute;
     top: 10px;
 }
+
+
 /******************/
+
 
 /***uneRecette*****/
 
+
 /******************/
+
 *.uneRecette {
     display: flex;
     flex-direction: column;
 }
+
+.ingrediant>button {
+    width: 67px;
+}
+
 .middle-uneRecette {
     margin-top: 70px;
     display: grid;
     grid-template-rows: 25% 50% 25%;
 }
-.center-uneRecette{
+
+.center-uneRecette {
     display: grid;
     grid-template-columns: 25% 50% 25%;
 }
+
 .ingrediant {
     height: 250px;
     margin-left: 15%;
 }
+
 .recette {
     height: 250px;
 }
+
 .recette img {
     height: 250px;
     width: 500px;
 }
+
 .middle-uneRectteDeux {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
+
+
 /*****************/
 
+
 /******Foot*******/
+
 
 /*****************/
 
@@ -269,8 +311,13 @@ footer {
     margin-left: 30px;
 }
 
+
 /**************************/
+
+
 /*********FORM*************/
+
+
 /**************************/
 
 .contact-titre {
@@ -278,8 +325,9 @@ footer {
     text-align: center;
     margin-bottom: 25px;
 }
+
 .contact form {
-    display:flex;
+    display: flex;
     flex-direction: column;
     text-align: center;
     width: 600px;
@@ -290,23 +338,30 @@ footer {
     display: flex;
     flex-direction: column;
 }
+
 .contact form label input {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+
 /**************************/
+
+
 /*********404 ERR*************/
+
+
 /**************************/
 
 .quatre-cent-quatre {
     font-size: 200px;
     text-align: center;
     background-color: black;
-    transition: all 2s ease-in;    
+    transition: all 2s ease-in;
 }
-.quatre-cent-quatre:hover  {
+
+.quatre-cent-quatre:hover {
     text-shadow: 2px 2px 7px white;
     transition: all 2s ease-in;
 }
