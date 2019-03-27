@@ -30,13 +30,14 @@
             ?>
 
             <div class="b1">
-                <h1> <?php print $recipe->getNom(); ?> </h1>
+                <h3> <?php print $recipe->getNom(); ?> </h3>
                 <br />
+                <div class="info">
                 <p> Nombre de personne <?php print $recipe->getQuantite(); ?></p>
-                <br />
                 <p> Temps requis : <?php print $recipe->getTemp(); ?> </p>
+                </div>
                 <br />
-                <p> Recette : <?php print $recipe->getDescription(); ?> </p>
+                <img src="img/recettes/recette<?php echo $recipe->getId(); ?>.jpg" alt="Image non chargée">
             </div>
 
             <?php

@@ -267,6 +267,16 @@ nav {
     margin-bottom: 5%;
 }
 
+.b1>h3 {
+    font-size: 150%;
+}
+
+.b1>.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 /******************/
 
