@@ -10,7 +10,7 @@
         </div>
 
         <li><a href="?loc=home"><i class="fas fa-home fa-2x"></i></a></li>
-        <li><img class="logo" src="../../Conception/charte-graphique/logo/logo nesti 2.png" alt=""></li>
+        <li><img class="logo" src="img/logo_nesti_2.png" alt=""></li>
         <li class="search-bar"> <input type="text" placeholder="Search.."></li>
         <div class="login">
             <ul>
